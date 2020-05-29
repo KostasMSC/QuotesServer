@@ -5,7 +5,7 @@ public class QuotesDBConnection {
 	private static final String connURL = "jdbc:mysql://localhost:3306/QUOTES_DB";
 	private static final String driver = "com.mysql.cj.jdbc.Driver";
 	private static final String connUser = "root";
-	private static final String connPasswd = "root";
+	private static final String connPasswd = "helloworld";
 
 	private static Connection conn = null;
 	
