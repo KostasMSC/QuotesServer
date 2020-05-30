@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class QuotesDBConnection {
 
-	private static final String connURL = "jdbc:mysql://localhost:3306/QUOTES_DB";
+	private static final String connURL = "jdbc:mysql://ec2-18-194-89-180.eu-central-1.compute.amazonaws.com:3306/QUOTES_DB";
 	private static final String driver = "com.mysql.cj.jdbc.Driver";
 	private static final String connUser = "root";
 	private static final String connPasswd = "helloworld";
