@@ -49,7 +49,7 @@ pipeline {
 			            echo "Error while removing images, continue..., cause: " + exc;
 			        }
 			    }
-
+			sh "sudo ssh -o StrictHostKeyChecking=no -oIdentityFile=/home/ubuntu/.ssh/FinalJenkins2.pem ubuntu@$remoteServer \'sudo docker system prune -a -f\'"
 		    sh "sudo ssh -o StrictHostKeyChecking=no -oIdentityFile=/home/ubuntu/.ssh/FinalJenkins2.pem ubuntu@$remoteServer \'sudo docker run -d -p 10001:10001 -p 20001:20001 $serverImage\'"
 		  }
 		}
