@@ -24,11 +24,12 @@ public class QuotesManagement implements Runnable {
 
 				// Read management command
 				String[] cmd = (String[]) ois.readObject();
-				if (cmd[0].equals("stop")) {
-					// Close DB Connection and exit
-					QuotesDBConnection.closeConnection();
-					System.exit(0);
-				} else if (cmd[0].equals("list")) {
+//				if (cmd[0].equals("stop")) {
+//					// Close DB Connection and exit
+//					QuotesDBConnection.closeConnection();
+//					System.exit(0);
+//				} else 
+				if (cmd[0].equals("list")) {
 					Statement stmt = null;
 					ResultSet rs = null;
 					try {
