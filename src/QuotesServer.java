@@ -15,7 +15,7 @@ public class QuotesServer {
 		
 		// start management thread
 		new Thread(new QuotesManagement()).start();
-		
+
 		ServerSocket sskt = null;
 		try {
 			// Register service on port SERVER_PORT
